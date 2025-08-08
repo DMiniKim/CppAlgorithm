@@ -2,38 +2,38 @@
 
 using namespace std;
 
-int BinarySearch(int list[], int left, int right, int key)
+void CountingSort(int list[], int size)
 {
-	int pivot = (left + right) / 2;
-	int findKey;
-	if (right <= left)
+	int max = 0;
+	for (int i = 0; i < size; i++)
 	{
-		cout << "찾는 key 가 없습니다." << endl;
-		return false;
+		if (max < list[i])
+		{
+			max = list[i];
+		}
 	}
-	if (list[pivot] == key )	return list[pivot];
-	else if(list[pivot] > key)
+	int* temp = new int[max]();
+	
+	for (int i = 0; i < size; i++)
 	{
-		findKey = BinarySearch(list, left, pivot - 1, key);
+		temp[list[i]-1]++;
 	}
-	else if (list[pivot] < key)
+	for (int i = 0; i < max; i++)
 	{
-		findKey = BinarySearch(list, pivot + 1, right, key);
+		cout << temp[i] << " ";
 	}
-
-	return findKey;
+	delete[] temp;
 }
-// 백준 이분탐색 부분 문제
+
 int main()
 {
-#pragma region 이분 탐색
-	// 탐색 범위를 반으로 나누어 찾는 값을 포함하는 범위를
-	// 좁혀나가는 방식으로 동작하는 알고리즘.
+#pragma region 계수 정렬
+	// 데이터의 값을 비교하지 않고 각 원소에 데이터가 몇 개 있는 지
+	// 개수를 세어 저장한 다음 정렬하는 알고리즘.
 
-	int arr[] = { 1,2,6,7,10,23,45,82,100,105,143,178,200 };
-	int size = sizeof(arr) / sizeof(arr[0]);
-
-	cout << BinarySearch(arr, 0, size - 1, 22) << endl;
+	int list[] = { 1,2,3,5,2,3,5,5,1,2,2,5,4,2,1,1,3,2,3,2,1 };
+	int size = sizeof(list) / sizeof(list[0]);
+	CountingSort(list, size);
 #pragma endregion
 
 	return 0;
