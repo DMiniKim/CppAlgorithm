@@ -1,56 +1,75 @@
 ﻿#include <iostream>
 #include <random>
+#include <vector>
+#define SIZE 8
+
 using namespace std;
-long long fibonacci(int n, long long list[])
+
+class Graph
 {
-	if ( n == 0)
+private:
+	vector<int> data[SIZE];
+	bool isCheck[SIZE];
+public:
+	Graph()
 	{
-		return 0;
-	}
-	if (n <= 1)
-	{
-		return list[n - 1] = n;
-	}
-	else
-	{
-		if (list[n - 1] != 0)
+		for (int i = 0; i < SIZE; i++)
 		{
-			return list[n - 1];
-		}
-		else
-		{
-			return list[n - 1] = fibonacci(n - 1,list) + fibonacci(n - 2,list);
+			isCheck[i] = false;
 		}
 	}
-}
+	void insert(int i, int j)
+	{
+		auto itI = find(data[i].begin(), data[i].end(), j);
+		auto itJ = find(data[j].begin(), data[j].end(), i);
+		if (itI == data[i].end())
+		{
+			data[i].push_back(j);
+		}
+		if (itJ == data[j].end())
+		{
+			data[j].push_back(i);
+		}
+	}
+	void DFS(int start)
+	{
+
+		isCheck[start] = true;
+		cout << start << " - ";
+		int size = data[start].size();
+		for (int i = 0; i < size; i++)
+		{
+			if (isCheck[data[start][i]] == false)
+			{
+				DFS(data[start][i]);
+			}
+		}
+	}
+};
 
 int main()
 {
-#pragma region 동적 계획법 ( Dynamic Programming )
-	// 특정 범위까지의 값을 구하기 위해 그것과 다른 범위까지의 값을
-	// 이용해서 효율적으로 값을 구하는 알고리즘
+#pragma region 깊이 우선 탐색 (Depth First Search)
+	// root 노드에서부터 다음 분기로 넘어가기 전에
+	// 해당 분기를 완벽하게 탐색하는 방법.
 
-	// 겹치는 부분 문제 ( Overlapping Subproblem )
-	// 동일한 작은 문제들이 반복하여 나타나는 경우.
-
-	// 최적 부분 구조 ( Optimal Substructure )
-	// 부분 문제의 최적 결과 값을 사용하여 전체 문제의
-	// 최적의 결과를 낼 수 있는 경우.
-
-	// 메모이제이션 ( Memoization )
-	// 프로그램이 동일한 계산을 반복해야 할 때 , 이전에 계산한 값을
-	// 메모리에 저장함으로 동일한 계산을 반복 수행하는 작업을 
-	// 제거하여 프로그램이 실행속도를 향상시키는 방법.
+	// 깊이 우선 탐색은 Stack을 활용합니다.
 #pragma endregion
-	long long list[100] = {};
-	cout << fibonacci(5,list) << endl;
-	for (const auto& element : list)
-	{
-		if (element != 0)
-		{
-			cout << element << " ";
-		}
-	}
+	Graph graph;
+	graph.insert(1, 2);
+	graph.insert(1, 3);
+
+	graph.insert(2, 3);
+	graph.insert(2, 4);
+	graph.insert(2, 5);
+
+	graph.insert(3, 6);
+	graph.insert(3, 7);
+
+	graph.insert(4, 5);
+	graph.insert(6, 7);
+
+	graph.DFS(1);
 
 	return 0;
 }
