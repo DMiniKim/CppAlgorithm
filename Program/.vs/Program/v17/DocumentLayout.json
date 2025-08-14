@@ -5,6 +5,12 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F82FD75-FC56-4454-81CF-399E56EA5EBD}|..\\Class 16th ( Breadth First Search )\\Class 16th ( Breadth First Search ).vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 16th ( Breadth First Search )\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7DCDE9D-4B02-48E9-B789-8545722779DC}|..\\Class 15th ( Depth First Search )\\Class 15th ( Depth First Search ).vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 15th ( Depth First Search )\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +20,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 978,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 16th ( Breadth First Search )\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class 16th ( Breadth First Search )\\Source.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 16th ( Breadth First Search )\\Source.cpp",
+              "RelativeToolTip": "..\\Class 16th ( Breadth First Search )\\Source.cpp",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAywFMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-14T05:37:23.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 15th ( Depth First Search )\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class 15th ( Depth First Search )\\Source.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 15th ( Depth First Search )\\Source.cpp",
+              "RelativeToolTip": "..\\Class 15th ( Depth First Search )\\Source.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-14T04:19:45.447Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +56,7 @@
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAhwCsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-04T04:25:55.854Z",
               "EditorCaption": ""

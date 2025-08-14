@@ -1,14 +1,17 @@
 ﻿#include <iostream>
 #include <random>
 #include <vector>
+#include <list>
+#include <queue>
 #define SIZE 8
-
 using namespace std;
 
 class Graph
 {
 private:
-	vector<int> data[SIZE];
+	//queue<int> queue;
+	vector<int> adjList[SIZE];
+	vector<int> inDegree;
 	bool isCheck[SIZE];
 public:
 	Graph()
@@ -17,31 +20,23 @@ public:
 		{
 			isCheck[i] = false;
 		}
+		inDegree.resize(SIZE, 0);
+		
 	}
-	void insert(int i, int j)
+	void insert(int vertex, int edge)
 	{
-		auto itI = find(data[i].begin(), data[i].end(), j);
-		auto itJ = find(data[j].begin(), data[j].end(), i);
-		if (itI == data[i].end())
-		{
-			data[i].push_back(j);
-		}
-		if (itJ == data[j].end())
-		{
-			data[j].push_back(i);
-		}
+		adjList[vertex].push_back(edge);
+		cout << vertex << " -> " << edge << endl;
+		inDegree[edge]++;
 	}
-	void DFS(int start)
+	void TopologicalSort()
 	{
-
-		isCheck[start] = true;
-		cout << start << " - ";
-		int size = data[start].size();
-		for (int i = 0; i < size; i++)
+		std::queue<int> queue;
+		for (int i = 1; i < SIZE; i++)
 		{
-			if (isCheck[data[start][i]] == false)
+			if (inDegree[i] == 0)
 			{
-				DFS(data[start][i]);
+				queue.push(i);
 			}
 		}
 	}
@@ -49,27 +44,39 @@ public:
 
 int main()
 {
-#pragma region 깊이 우선 탐색 (Depth First Search)
-	// root 노드에서부터 다음 분기로 넘어가기 전에
-	// 해당 분기를 완벽하게 탐색하는 방법.
+#pragma region 위상 정렬
+	// 병합 그래프의 존재하는 각 정점들의 선행 순서를 지키며,
+	// 정점들을 차례대로 진행해서 나열하는 알고리즘.
 
-	// 깊이 우선 탐색은 Stack을 활용합니다.
-#pragma endregion
+	// 사이클이 발생하는 경우 위상 정렬을 수행할 수 없음.
+
+	// DAG(Directed Acyclic Graph) : 사이클이 존재하지 않는 그래프
+
+	// 시간 복잡도 : // O(V + E) (Vertex : 정점의 개수, Edge : 간선의 개수)
+
+	// 위상 정렬하는 방법
+
+	// 1. 진입 차수가 0인 정점을 큐에 삽입.
+
+	// 2. Queue에서 원소를 꺼내 연결된 모든 간선을 제거.
+
+	// 3. 간선 제거 이후에 진입차수가 0 이된 정점을 Queue에 삽입.
+
+	// 4. Queue가 비어있을 때 까지 2번~ 3번 작업을 반복 수행.
+
+
 	Graph graph;
 	graph.insert(1, 2);
-	graph.insert(1, 3);
-
+	graph.insert(1, 5);
 	graph.insert(2, 3);
-	graph.insert(2, 4);
-	graph.insert(2, 5);
-
-	graph.insert(3, 6);
-	graph.insert(3, 7);
-
-	graph.insert(4, 5);
+	graph.insert(3, 4);
+	graph.insert(4, 6);
+	graph.insert(5, 6);
 	graph.insert(6, 7);
 
-	graph.DFS(1);
+
+
+#pragma endregion
 
 	return 0;
 }
