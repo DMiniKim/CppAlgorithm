@@ -38,26 +38,25 @@ void SelectMap(bool a, bool b, bool c, bool d)
 
 bool Search(int x, int y)
 {
-	if (x == 3 && y == 3) return true; // 목적지
+	if (x < 0 || y < 0 || x >= SIZE || y >= SIZE) return false;
+	
+	if (map[x][y] == false)		return false;
 
-	// if (visited[x][y] == true) return false; // 방문한 곳이라면 return
+	if (visited[x][y] == true)	return false;
+		
+	if (x == SIZE - 1 && y == SIZE - 1)		return true;
 
-	visited[x][y] = true;	// 해당 좌표 방문 체크
+	visited[x][y] = true;
 
-	if (x < 0 || y < 0 || x > 3 || y > 3) return false; // 그리드 밖을 벗어나면 return
+	
+	if (Search(x, y + 1)) return true;	// 오른쪽으로 이동	
+	if (Search(x + 1, y)) return true;	// 아래로 이동
+	if (Search(x, y - 1)) return true;	// 왼쪽으로 이동
+	if (Search(x - 1, y)) return true;	// 위로 이동
+	
+	visited[x][y] = false;
 
-	if (map[x][y] == false)	// 벽이라면 return 
-	{
-		return false;
-	}
-	bool top = Search(x, y - 1);   // 상
-	bool bottom = Search(x, y + 1);	// 하
-	bool left = Search(x - 1, y);	// 좌
-	bool right = Search(x - 1, y);	//우
-	if (top == true || bottom == true || left == true || right == true)
-	{
-		return true;
-	}
+	return false;
 }
 
 
@@ -117,7 +116,11 @@ int main()
 		}
 		cout << endl;
 	}
-	cout << Search(0, 0) << endl;
+	if (Search(0, 0))
+	{
+		cout << "찾았다 당신은 길을" << endl;
+	}
+	
 
 }
 
