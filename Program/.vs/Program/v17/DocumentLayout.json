@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{585D5078-4C3D-4F52-9087-9A20A3DCD09E}|..\\Class 20th ( Dijkstra )\\Class 20th ( Dijkstra ).vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 20th ( Dijkstra )\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9AC4DF43-8407-416D-A855-FD38C9AB705A}|..\\Class 18th ( Union Find )\\Class 18th ( Union Find ).vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 18th ( Union Find )\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,30 +17,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 978,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 18th ( Union Find )\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class 18th ( Union Find )\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 18th ( Union Find )\\Source.cpp",
-              "RelativeToolTip": "..\\Class 18th ( Union Find )\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 20th ( Dijkstra )\\Source.cpp",
+              "RelativeDocumentMoniker": "..\\Class 20th ( Dijkstra )\\Source.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 20th ( Dijkstra )\\Source.cpp",
+              "RelativeToolTip": "..\\Class 20th ( Dijkstra )\\Source.cpp",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAiwH4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-20T06:10:22.973Z",
+              "WhenOpened": "2025-08-21T06:44:47.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAGEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-19T04:15:16.112Z",
               "EditorCaption": ""
