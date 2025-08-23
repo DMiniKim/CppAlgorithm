@@ -1,13 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\mini\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\CppAlgorithm\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|C:\\Users\\mini\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\CppAlgorithm\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6D2916DE-BCB9-4581-A488-754F5FEDC2A7}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{585D5078-4C3D-4F52-9087-9A20A3DCD09E}|..\\Class 20th ( Dijkstra )\\Class 20th ( Dijkstra ).vcxproj|C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 20th ( Dijkstra )\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,30 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 978,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 20th ( Dijkstra )\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class 20th ( Dijkstra )\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Class 20th ( Dijkstra )\\Source.cpp",
-              "RelativeToolTip": "..\\Class 20th ( Dijkstra )\\Source.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-22T06:17:11.445Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5d51d786-731c-4256-bf95-6a6dd495c7d7}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{5d51d786-731c-4256-bf95-6a6dd495c7d7}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp",
+              "DocumentMoniker": "C:\\Users\\mini\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\CppAlgorithm\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CppAlgorithm\\Program\\Program.cpp",
+              "ToolTip": "C:\\Users\\mini\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\CppAlgorithm\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAywGQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAF0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-19T04:15:16.112Z",
               "EditorCaption": ""
@@ -53,11 +45,15 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
